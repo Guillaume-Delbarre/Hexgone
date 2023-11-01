@@ -1,5 +1,7 @@
 # Hexgone
 
+Recréation du jeu de Hex en python avec en objectif de créer au moins une IA dessus
+
 ## Requirements.txt
 
 Pour créer le fichier requirements.txt il faut lancé la commande :
