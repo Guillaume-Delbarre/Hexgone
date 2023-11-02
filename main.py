@@ -21,8 +21,6 @@ while running :
 
     game.draw()
 
-    rect = pygame.draw.polygon(screen, "Red", [(110, 10), (160, 35), (160, 85), (110, 110), (60, 85), (60, 35)])
-
     for event in pygame.event.get() :
         # Test de la fermeture de la fenetre
         if event.type == pygame.QUIT :
@@ -31,5 +29,4 @@ while running :
         # Test d'un click souris
         if event.type == pygame.MOUSEBUTTONDOWN :
             pos = pygame.mouse.get_pos()
-            if rect.collidepoint(pos) :
-                print("Youpi")
+            game.check_hexagone(pos)
